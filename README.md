@@ -1,13 +1,23 @@
 # Building Rust Audio with nix
 
+## Prerequisites
+
+nix with experimental features: `nix-command` and `flakes` enabled
+
+to enable them:
+
+```shell
+cat <<'EOF' >> "$HOME"/.config/nix.conf
+
+experimental-features = nix-command flakes
+
+EOF
+```
+
 ## Dev Shell
 
 ```shell
-nix --experimental-features nix-command \
-    --experimental-features flakes \
-    develop \
-        --accept-flake-config \
-        github:ink-splatters/RustAudio-nix
+nix develop github:ink-splatters/RustAudio-nix
 ```
 
 creates development environments for building of:

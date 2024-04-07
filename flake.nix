@@ -18,12 +18,6 @@
     };
   };
 
-  nixConfig = {
-    extra-substituters = "https://cachix.cachix.org";
-    extra-trusted-public-keys =
-      "cachix.cachix.org-1:eWNHQldwUO7G2VkjpnjDbWwy4KQ/HNxht7H4SSoMckM=";
-  };
-
   outputs = { nixpkgs, flake-utils, pre-commit-hooks, self, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
