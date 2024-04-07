@@ -24,8 +24,12 @@ creates development environments for building of:
 
 - [coreaudio-rs](https://github.com/RustAudio/coreaudio-rs)
 - [rodio](https://github.com/RustAudio/rodio)
-- ... TODO
+- TODO
 
 ## Building with nix
 
 TODO
+
+## Embedding as submodule
+
+TODO (requires flake-parts and more configuration)
